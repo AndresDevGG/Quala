@@ -1,0 +1,35 @@
+DROP DATABASE QUALA_DB;
+
+CREATE DATABASE QUALA_DB
+
+USE QUALA_DB
+
+CREATE TABLE Currency(
+	ID UNIQUEIDENTIFIER PRIMARY KEY,
+	Code VARCHAR(10) NOT NULL,
+	[Name] VARCHAR(50) NOT NULL,
+	Active BIT DEFAULT(1),
+	CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE Branch(
+	ID UNIQUEIDENTIFIER PRIMARY KEY,
+	Code INT NOT NULL,
+	[Description] VARCHAR(250) NOT NULL,
+	[Address] VARCHAR(250) NOT NULL,
+	Identify VARCHAR(50) NOT NULL,
+	Created DATETIME,
+	CurrencyId UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Currency(ID),
+	Active BIT DEFAULT(1),
+	CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+INSERT INTO Currency (ID, Code, [Name])
+VALUES
+('8beac170-729f-11ee-b962-0242ac120002','COP','Peso Colombiano'),
+('8beac468-729f-11ee-b962-0242ac120002','CLP','Peso Chileno'),
+('8beac59e-729f-11ee-b962-0242ac120002','USD','Dólar Estadounidense')
+
+select * from Currency;
+
+select * from Branch;

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "zB7a/SPZFzPbWzrVesb4TH+E85/ag6ygatkvzFuyo99Y0Jgujteaoz+G55QBwNRsU4MMRoMSy1lzK5BUZNwInw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Acer\\Documents\\GitHub\\Quala\\Back\\QUALA\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Acer\\.nuget\\packages\\erroror\\1.3.0\\erroror.1.3.0.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
