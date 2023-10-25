@@ -28,7 +28,7 @@ namespace Infraestructure.DI
         private static IServiceCollection AddPersistence(this IServiceCollection services, IConfiguration configuration)
         {
 
-            services.AddDbContext<QualaDbContext>(options => options.UseSqlServer());
+            services.AddDbContext<QualaDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("DBConnection")));
 
             services.AddScoped<ICurrencyRepository, CurrencyRepository>();
             services.AddScoped<IBranchRepository, BranchRepository>();
