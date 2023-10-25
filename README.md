@@ -2,7 +2,7 @@
 
 <h3>Hola y bienvenido!👋</h3>
 <ul>
-  <li>Para el back-end tendrás que ejecutar el script de base de datos en sql server y modificar la cadena de conexión</li>
+  <li>Para el back-end tendrás que ejecutar el script de base de datos en sql server y modificar la cadena de conexión en el <code>appsettings</code> -> <code>DBConnection</code> </li>
   <li>Para ejecutar la aplicación tendrás que instalar las dependencias <code>node_modules</code> para el front con el comando <code>npm install</code> luego ejecutar el comando <code>ng serve</code></li>
 </ul>
 
