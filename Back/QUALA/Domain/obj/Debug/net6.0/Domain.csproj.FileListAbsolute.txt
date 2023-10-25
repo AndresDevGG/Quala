@@ -9,3 +9,15 @@ C:\Users\Acer\Documents\Base\QUALA\Domain\obj\Debug\net6.0\Domain.csproj.CoreCom
 C:\Users\Acer\Documents\Base\QUALA\Domain\obj\Debug\net6.0\Domain.dll
 C:\Users\Acer\Documents\Base\QUALA\Domain\obj\Debug\net6.0\ref\Domain.dll
 C:\Users\Acer\Documents\Base\QUALA\Domain\obj\Debug\net6.0\Domain.pdb
+C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\Domain\bin\Debug\net6.0\Domain.deps.json
+C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\Domain\bin\Debug\net6.0\Domain.dll
+C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\Domain\bin\Debug\net6.0\ref\Domain.dll
+C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\Domain\bin\Debug\net6.0\Domain.pdb
+C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\Domain\obj\Debug\net6.0\Domain.dll
+C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\Domain\obj\Debug\net6.0\ref\Domain.dll
+C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\Domain\obj\Debug\net6.0\Domain.pdb

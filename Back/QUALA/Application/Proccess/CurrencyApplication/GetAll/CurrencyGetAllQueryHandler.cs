@@ -28,7 +28,7 @@ namespace Application.Proccess.CurrencyApplication.GetAll
 
             if (!loans.Any())
             {
-                return Error.NotFound("mensaje", $"No hay prestamos.");
+                return Error.NotFound("mensaje", $"No hay monedas.");
             }
 
             return loans;

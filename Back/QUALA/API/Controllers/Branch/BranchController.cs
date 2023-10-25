@@ -1,4 +1,6 @@
 ﻿using API.Controllers.API;
+using Application.Proccess.BranchApplication.Delete;
+using Application.Proccess.BranchApplication.GetAll;
 using Application.Proccess.BranchApplication.Save;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -25,6 +27,29 @@ namespace API.Controllers.Branch
 
             return branchResult.Match(
                 loan => Ok(loan),
+                errors => Problem(errors)
+            );
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+
+            var branchResult = await _mediator.Send(new BranchGetAllquery());
+
+            return branchResult.Match(
+                loan => Ok(loan),
+                errors => Problem(errors)
+            );
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var deleteResult = await _mediator.Send(new DeleteBranchCommand(id));
+
+            return deleteResult.Match(
+                customerId => NoContent(),
                 errors => Problem(errors)
             );
         }

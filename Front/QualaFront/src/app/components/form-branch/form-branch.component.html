@@ -1,1 +1,41 @@
-<p>form-branch works!</p>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Formulario de sedes</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="formulario" autocomplete="off">
+      <mat-form-field>
+        <input matInput placeholder="Código" formControlName="code" type="number" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Descripción" formControlName="description" required maxlength="250">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Dirección" formControlName="address" required maxlength="250">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Identificación" formControlName="identify" required maxlength="50">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Fecha de creación" formControlName="createdDate" [min]="today" type="date" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Moneda</mat-label>
+        <mat-select formControlName="currency" required>
+          <mat-option *ngFor="let currency of currencies" [value]="currency.id">{{currency.code}} - {{ currency.name }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="submitForm()" [disabled]="formulario.invalid">Guardar</button>
+  </mat-card-actions>
+
+</mat-card>

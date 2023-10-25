@@ -10,9 +10,8 @@ namespace Infraestructure.Mapper.MapperBranch
 
         public MapperBranch()
         {
-            CreateMap<Branch, BranchDomain>();
-                //.ForMember(dest => dest.Currency, org => org.MapFrom(src => src.Currency.Code));
-
+            CreateMap<Branch, BranchDomain>()
+                .ForMember(dest => dest.CurrencyCode, org => org.MapFrom(src => src.Currency.Code));
             CreateMap<BranchDomain, Branch>()
                 .ForMember(dest => dest.Id, org => org.MapFrom(src => src.Id))
                 .ForMember(dest => dest.Code, org => org.MapFrom(src => src.Code))

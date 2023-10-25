@@ -2,6 +2,7 @@
 using AutoMapper;
 using Domain.Process.Branch;
 using Infraestructure.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infraestructure.Persistence.Repositories.BranchRepo
 {
@@ -16,9 +17,14 @@ namespace Infraestructure.Persistence.Repositories.BranchRepo
             _mapper = mapper;
         }
 
-        public Task<List<BranchDomain>> GetAll()
+        public async Task<List<BranchDomain>> GetAll()
         {
-            throw new NotImplementedException();
+            var currencies = await _context.Branches
+                .Include(i => i.Currency)
+                .ToListAsync();
+            var result = _mapper.Map<List<BranchDomain>>(currencies);
+
+            return result;
         }
 
         public Task<BranchDomain> GetById(Guid id)
@@ -42,7 +48,9 @@ namespace Infraestructure.Persistence.Repositories.BranchRepo
 
         public void Delete(Guid id)
         {
-            throw new NotImplementedException();
+            Branch branch = _context.Branches.FirstOrDefault(x => x.Id == id);
+            _context.Branches.Remove(branch);
+            _context.SaveChanges();
         }
     }
 }

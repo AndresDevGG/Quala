@@ -192,3 +192,4 @@ C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\API\obj\Debug\net6.0\API.dll
 C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\API\obj\Debug\net6.0\ref\API.dll
 C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\API\obj\Debug\net6.0\API.pdb
 C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\API\obj\Debug\net6.0\API.genruntimeconfig.cache
+C:\Users\Acer\Documents\GitHub\Quala\Back\QUALA\API\bin\Debug\net6.0\System.Web.Cors.dll

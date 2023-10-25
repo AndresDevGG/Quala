@@ -9,7 +9,7 @@ import { Methods } from './Methods.model';
 })
 export class HttpService {
 
-  private host = 'api/';
+  private host = 'https://localhost:7176/api/';
 
   constructor(private http: HttpClient) {}
 

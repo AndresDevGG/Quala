@@ -24,7 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Proccess\BranchApplication\Common\" />
     <Folder Include="Proccess\CurrencyApplication\Common\" />
   </ItemGroup>
 

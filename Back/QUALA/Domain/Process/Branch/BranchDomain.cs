@@ -4,7 +4,7 @@ namespace Domain.Process.Branch
     public sealed class BranchDomain
     {
 
-        public BranchDomain(Guid id, int code, string description, string address, string identify, DateTime? created, Guid? currencyId, bool? active) {
+        public BranchDomain(Guid id, int code, string description, string address, string identify, DateTime? created, Guid? currencyId, bool? active, string? currencyCode = "") {
             Id = id;
             Code = code;
             Description = description;
@@ -13,7 +13,7 @@ namespace Domain.Process.Branch
             Created = created;
             CurrencyId = currencyId;
             Active = active;
-            //Currency = currency;
+            CurrencyCode = currencyCode;
         }
 
         public Guid Id { get; set; }
@@ -32,6 +32,6 @@ namespace Domain.Process.Branch
 
         public bool? Active { get; set; }
 
-        //public string? Currency { get; set; } = null!;
+        public string? CurrencyCode { get; set; } = null!;
     }
 }
